@@ -20,7 +20,7 @@ function totalVideosDuration(channel) {
  * BONUS: use iteration method `.sort()`
  ****************************************************************/
 function channelWithMostContent(channels) {
-  channels.sort(function(a, b){ return totalVideosDuration(a) - totalVideosDuration(b);});
+  channels.sort((a, b) => totalVideosDuration(a) - totalVideosDuration(b));
   return channels[channels.length-1];
 }
 
@@ -32,7 +32,7 @@ function channelWithMostContent(channels) {
  * BONUS: use iteration method `.sort()`
  ****************************************************************/
 function longestChannelName(channels) {
-  channels.sort(function(a, b){ return a.name.length - b.name.length});
+  channels.sort((a, b) =>  a.name.length - b.name.length);
 return channels[channels.length-1];
 }
 
